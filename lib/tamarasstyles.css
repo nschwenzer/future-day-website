@@ -1,10 +1,18 @@
+body {
+    background-image: url(../images/flag-background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 203%;
+    font-family: 'STIX Two Text', serif;
+    font-size: 14px;
+}
 h1, 
 h2, 
 h3 {
     color: blue;
     font-size: 2em;
     font-family: 'Castoro Titling', cursive;
-    line-height: 2em;
+    line-height: 1.5em;
     margin: 0;
 }
 
@@ -13,20 +21,26 @@ h2 {
 }
 h3 {
     font-size: 1.5em;
-
+}
+hgroup p{
+    font-size: 1.25em;
+    color: blue;
+    line-height: 1em;
+    margin: 0;
+    font-style: italic;
+}
+hgroup {
+    padding: 2em 0;
 }
 main {
     display: flex;
     flex-wrap: wrap;
 }
 
-details {
-    font-size: 1.5em;
-}
-
 details summary {
-    font-size: 1.23em;
+    font-size: 1.20em;
     overflow: auto;
+    margin-bottom: 1em;
 }
 
 
@@ -38,7 +52,10 @@ details summary {
 section {
     padding-top: 1em;
     width: 100%;
-    
+}
+summary {
+    font-weight: 600;
+    color: rgb(56, 56, 56);
 }
 .cards-wrapper {
     display: flex;
@@ -46,15 +63,23 @@ section {
     gap: 1em;
 
 }
-.cards-wrapper details {
-    width: 30%;
+details {
+    min-width: 13em;
     display: block;
-    background-color: #eee;
+    background-color: #f6f4f4;
     min-height: 100px;
     padding: 1em;
     box-sizing: border-box;
+    border-radius: 5px;
     cursor: pointer;
-    border: thin solid red;
+    color: rgb(114, 114, 114);
+    font-size: 1.5em;
+}
+.cards-wrapper details {
+    width: calc(50% - 1em);
+}
+section:last-child details {
+    width: calc(100% - 1em);
 }
 img {
     width: 100%;
@@ -63,4 +88,13 @@ img {
 figure {
     padding: 0;
     margin: 0;
+}
+ul {
+    padding-inline-start: 1em;
+}
+li {
+    margin-bottom: 0.5em;
+}
+li:last-child {
+    margin-bottom: 0;
 }
