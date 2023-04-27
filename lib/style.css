@@ -1,6 +1,23 @@
-h1 {
+body {
+    border: thin solid rgb(252, 246, 246);
+    background-color: #ffffff
+}
+
+.wrapper {
+    border: thin solid rgb(255, 255, 255);
+}
+
+
+header h1, 
+header h2, 
+header h3 {
     color: blue;
+    font-size: 2em;
+    line-height: .4em;
+    font-family: 'Castoro Titling', cursive;
 }
 h2 {
     color: red
+}
+.fit-picture {
 }
